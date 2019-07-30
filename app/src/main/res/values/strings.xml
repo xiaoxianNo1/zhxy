@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">智慧校园</string>
+    <string name="title_activity_login">用户登录</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">账号/手机号/邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录或注册</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="error_invalid_email">无效的账号</string>
+    <string name="error_pwd_empty">密码不能为空</string>
+    <string name="error_invalid_password">这个密码太短了</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">账号不能为空</string>
+    <string name="permission_rationale">提供完整的电子邮件需要联系人权限</string>
+    <string name="user_registration">用户注册</string>
+    <string name="forgot_pwd">忘记密码?</string>
+    <string name="user_nick_name">您的昵称</string>
+    <string name="edit_nick_name">请输入您的昵称</string>
+    <string name="user_email">电子邮箱</string>
+    <string name="edit_email">请输入您的电子邮箱</string>
+    <string name="user_phone_number">手机号码</string>
+    <string name="edit_phone_number">请输入您的手机号码</string>
+    <string name="user_pwd">密码</string>
+    <string name="edit_pwd">请设置您的密码</string>
+    <string name="user_notarize">确认密码</string>
+    <string name="edit_notarize">请再次输入您的密码</string>
+    <string name="register">注册</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_unsuccess">注册失败</string>
+    <string name="cancle">取消</string>
+    <string name="error_email">请输入正确的邮箱</string>
+    <string name="error_phone">请输入正确的手机号</string>
+    <string name="error_pwd_notarize">两次密码不一致</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_plaza">广场</string>
+    <string name="title_dynamic">动态</string>
+    <string name="title_message">消息</string>
+    <string name="title_me">我的</string>
+    <string name="title_user_signature">请输入您的个性签名</string>
+    <string name="title_user_logout">退出当前登录账号</string>
+    <string name="title_user_name">真实姓名</string>
+    <string name="title_user_sex">性别</string>
+    <string-array name="spinner_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string name="user_region">地址</string>
+    <string name="title_ok">确定</string>
+    <string name="search_content">请输入要搜索的内容</string>
+    <string name="phone_digital">手机数码</string>
+    <string name="costume">服饰</string>
+    <string name="shoe_bag">鞋包</string>
+    <string name="beauty_makeup">美妆</string>
+    <string name="books">图书</string>
+    <string name="all_classify">所有分类</string>
+
+
+    <!--index-->
+    <string name="home">&#xe61e;</string>
+    <string name="message">&#xe61f;</string>
+    <string name="cart">&#xe607;</string>
+    <string name="mine">&#xe61a;</string>
+    <string name="search">&#xe613;</string>
+    <string name="back">&#xe682;</string>
+    <string name="huiyuanma">&#xe77d;</string>
+    <string name="saoyisao">&#xe60c;</string>
+    <string name="didian">&#xe605;</string>
+    <string name="money">&#xe602;</string>
+    <string name="daifukuan">&#xe608;</string>
+    <string name="daifahuo">&#xe649;</string>
+    <string name="daishouhuo">&#xe643;</string>
+    <string name="shouhou">&#xe60b;</string>
+    <string name="shezhi">&#xe610;</string>
+    <string name="rili">&#xe669;</string>
+    <string name="yesheng">&#xe69f;</string>
+    <string name="lingquan">&#xe6b0;</string>
+    <string name="xianzhihuanqian">&#xe609;</string>
+    <string name="kefuxiaomi">&#xe646;</string>
+    <string name="huabei">&#xe630;</string>
+    <string name="aliyuka">&#xe60a;</string>
+    <string name="pingjia">&#xe639;</string>
+    <string name="zhuti">&#xe66f;</string>
+    <string name="fabu">我发布的</string>
+    <string name="maichu">我卖出的</string>
+    <string name="maidao">我买到的</string>
+    <string name="clear_history">清空历史</string>
+    <string name="title_search">搜索</string>
+    <string name="details_list">详情列表</string>
+    <string name="original_price">原价</string>
+    <string name="free_postage">快递：免邮费</string>
+    <string name="preferential">优惠</string>
+    <string name="coupon_redemption">领券</string>
+    <string name="enter_quantity">请选择你要购买的数量</string>
+    <string name="add_shop_cart">加入购物车</string>
+    <string name="buy_now">立即购买</string>
+    <string name="consignee_name">收货人姓名</string>
+    <string name="consignee_phone">收货人手机号</string>
+    <string name="consignee_address">收货人地址</string>
+    <string name="purchase_quantity">购买数量</string>
+    <string name="in_distribution">配送方式</string>
+    <string name="submit_orders">提交订单</string>
+    <string name="total">合计</string>
+    <string name="RMB">￥</string>
+    <string name="no_more_data">没有更多数据啦</string>
+    <string name="send">发送</string>
+    <string name="friend_name">好友姓名</string>
+    <string name="school_news">学院新闻</string>
+    <string name="notice">通知公告</string>
+    <string name="theory_learning">理论学习</string>
+    <string name="safety_message">安全通报</string>
+    <string name="user_guide">用户指南</string>
+    <string name="jiuguan_vr">酒管全景</string>
+    <string name="flea_market">跳蚤市场</string>
+    <string name="query_etc">四六级查询</string>
+
+
+</resources>

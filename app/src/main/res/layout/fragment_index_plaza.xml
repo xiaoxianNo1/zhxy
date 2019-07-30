@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrea"
+    android:orientation="vertical">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout_plaza"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <AdapterViewFlipper
+                    android:id="@+id/flipper_lb_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:flipInterval="5000"
+                    android:layout_alignParentTop="true"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible">
+                    <!--图标-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@color/snow"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_news_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_news_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/school_news"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_notice_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_gonggao_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/notice"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_study_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_xuexi_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/theory_learning"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_safety_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_anquan_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/safety_message"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_guide_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_zhinan_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/user_guide"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_pano_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_quanjing_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/jiuguan_vr"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_shop_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_shichang_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/flea_market"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_cet_query_plaza"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_chaxun_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/query_etc"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <!--webView-->
+                <WebView
+                    android:id="@+id/web_view_plaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </WebView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_transaction_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_transaction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/img_transaction_img"
+        android:textSize="12pt"
+        tools:text="我发布的" />
+
+    <TextView
+        android:id="@+id/txt_transaction_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/img_transaction_ico"
+        android:layout_marginRight="20dp"
+        android:textSize="12pt"
+        tools:text="0" />
+
+    <ImageView
+        android:id="@+id/img_transaction_ico"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_you_24dp" />
+
+</RelativeLayout>

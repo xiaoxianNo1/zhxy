@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrea"
+    tools:context=".activity.ShopActivity">
+    <!--搜索框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/saoyisao"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:background="@drawable/ic_saoyisao_24dp"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="扫一扫"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_shop_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_search_shop"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="7"
+                android:background="@drawable/search_border"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/search_content"
+                android:lines="1"
+                android:paddingLeft="12dp"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/didian"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/didian"
+                android:textColor="@color/mintcream"
+                android:textSize="27dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="地点"
+                android:textColor="@color/mintcream"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/huiyuanma"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/huiyuanma"
+                android:textColor="@color/white"
+                android:textSize="27dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="会员码"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_marginTop="50dp"
+        android:id="@+id/swipe_layout_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--搜索框以下-->
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="674dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/qianhui"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <!--轮播图-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal">
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white"
+                            android:scaleType="fitXY">
+
+                        </com.youth.banner.Banner>
+                    </LinearLayout>
+                    <!--图标-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@color/snow"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_electric_appliance_shop"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_shoujishuma_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/phone_digital"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_dress_shop"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_fushi_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/costume"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_shoe_bag_shop"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_xiebao_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/shoe_bag"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_beauty_makeup_shop"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_meizhuang_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/beauty_makeup"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_books_shop"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_tushu_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/books"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/img_all_class_shop"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_allfenlei_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="@string/all_classify"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <ImageButton
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_allfenlei_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="拍卖"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <ImageButton
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="12dp"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="2"
+                                    android:background="@color/snow"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_allfenlei_24dp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="分类"
+                                    android:textColor="@color/gray"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!--分割-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/qianhui"
+                        android:orientation="horizontal"></LinearLayout>
+                    <!--猜你喜欢部分-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/snow"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shortLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginRight="120dp"
+                            android:layout_marginBottom="19dp"
+                            android:background="@color/orangered" />
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="-40dp"
+                            android:background="@color/snow"
+                            android:gravity="center"
+                            android:text="猜你喜欢"
+                            android:textColor="@color/orangered"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <!--商品列表-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_commodity_shop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/no_more_data"
+                            android:textColor="@color/gray"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

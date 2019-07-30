@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorGrea"
+    tools:context=".activity.UserInfoActivity">
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_touxiang"
+                android:src="@drawable/ic_touxiang_24dp"
+                android:layout_centerInParent="true"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/txt_user_nc"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/img_touxiang"
+                android:text="@string/user_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_gxqm_user"
+                android:layout_centerHorizontal="true"
+                android:text="@string/title_user_signature"
+                android:layout_below="@id/txt_user_nc"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/img_sex_user"
+                android:layout_alignTop="@id/txt_user_nc"
+                android:layout_toRightOf="@id/txt_user_nc"
+                android:src="@drawable/ic_sex_nan_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title_user_sex"
+            android:textSize="20sp" />
+        <Spinner
+            android:id="@+id/spinner_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:entries="@array/spinner_sex" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_phone_number"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_phone_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/edit_phone_number"
+            android:inputType="phone" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/user_email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_email_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/edit_email"
+            android:inputType="textEmailSubject" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/user_region"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_user_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_user_logout"
+            android:textSize="10pt" />
+
+    </LinearLayout>
+
+</LinearLayout>
